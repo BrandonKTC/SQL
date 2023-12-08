@@ -1,0 +1,12 @@
+SELECT col_name FROM table_name
+where col_name LIKE '_her%'
+
+
+The LIKE and ILIKE operators in SQL are used to search for patterns in strings.
+They are both similar in their basic functionality, but they differ in their handling of case sensitivity.
+
+LIKE Operator :
+The LIKE operator is case-sensitive, meaning that it will only match strings that exactly match the specified pattern.
+
+ILIKE Operator :
+The ILIKE operator is case-insensitive, meaning that it will match strings that match the specified pattern regardless of case.

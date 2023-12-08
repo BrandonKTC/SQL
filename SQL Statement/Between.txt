@@ -1,0 +1,6 @@
+SELECT col_name FROM table_name
+WHERE col_name
+BETWEEN first_val AND second_val
+
+The BETWEEN operator in SQL is used to filter records based on a range of values. It is a convenient way to select records that
+fall within a specific range, making it a frequently used operator in data retrieval and analysis tasks.

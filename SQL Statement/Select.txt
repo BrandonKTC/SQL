@@ -1,0 +1,4 @@
+SELECT col_name FROM table_name
+
+The SELECT statement is one of the most fundamental and frequently used statements in SQL.
+It's used to retrieve data from one or more tables in a database.

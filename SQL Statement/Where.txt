@@ -1,0 +1,5 @@
+SELECT col_name, col_name FROM table_name
+WHERE col_name (>, <, !=, OR, AND, NOT) 'col_name'
+
+The WHERE clause in SQL is a conditional clause that is used to filter the results of a SELECT, UPDATE, or DELETE statement.
+It allows you to specify a condition that only records that meet that condition will be included in the resulting result set.

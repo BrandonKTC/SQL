@@ -1,0 +1,8 @@
+SELECT COUNT(*) FROM table_name
+
+combine with distinct 
+
+SELECT COUNT( DISTINCT col_name) FROM table_name
+
+In SQL, the COUNT() function is used to count the number of rows in a table or the number of rows that meet a specified condition.
+It is a frequently used function for retrieving data summarization or for performing calculations based on the number of records.

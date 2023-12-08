@@ -1,0 +1,11 @@
+SELECT col_name FROM table_name
+LIMIT num;
+
+The LIMIT clause in SQL is used to restrict the number of rows returned from a SELECT query.
+It can be used to either specify a maximum number of rows to return, or to skip a certain number of rows before returning any rows.
+
+SELECT col_name FROM table_name
+LIMIT num OFFSET offset_value;
+
+The OFFSET clause can be used to specify the number of rows to skip before returning any rows.
+This can be useful when combined with the LIMIT clause to implement pagination.

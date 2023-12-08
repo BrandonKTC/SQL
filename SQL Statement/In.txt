@@ -1,0 +1,13 @@
+SELECT col_name FROM table_name
+WHERE col_name IN (val1, val2, val3)
+
+The IN operator is a versatile tool for filtering data based on lists of values.
+It simplifies data retrieval and manipulation tasks, making it an essential part of SQL queries.
+
+eg:
+
+SELECT * FROM products
+WHERE price > 10 AND id IN (
+  SELECT product_id FROM orders
+  WHERE date BETWEEN '2023-11-01' AND '2023-12-01'
+);

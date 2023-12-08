@@ -1,0 +1,4 @@
+SELECT DISTINCT col_name FROM table_name
+
+In SQL, the SELECT DISTINCT statement is used to retrieve distinct values from a table or result set.
+This means that it removes any duplicate rows and only returns the unique values for the specified columns.
