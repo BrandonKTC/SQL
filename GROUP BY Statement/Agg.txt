@@ -1,0 +1,16 @@
+Most Common Aggregate Functions:
+
+• AVG() - returns average value :
+SELECT AVG(col_name) FROM table_name
+
+• COUNT() - returns number of values :
+SELECT COUNT(col_name) FROM table_name
+
+• MAX() - returns maximum value :
+SELECT MAX(col_name) FROM table_name
+
+• MIN() - returns minimum value :
+SELECT MIN(col_name) FROM table_name
+
+• SUM() - returns the sum of all values :
+SELECT SUM(col_name) FROM table_name

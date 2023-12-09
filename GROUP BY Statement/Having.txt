@@ -1,0 +1,7 @@
+SELECT customer_id, staff_id, SUM(amount) from payment
+GROUP BY customer_id, staff_id
+HAVING staff_id = 2 AND SUM(amount) > 100;
+
+The HAVING statement is used to filter the results of a GROUP BY clause.
+It works similarly to the WHERE clause, but it is used after the GROUP BY clause.
+The HAVING clause can be used to filter groups of rows, while the WHERE clause can only be used to filter individual rows.

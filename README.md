@@ -1,7 +1,7 @@
 # SQL
 
 - [x] Basics SQL syntax
-- [] Analyzing data using aggregate functions with GROUP BY commands
+- [x] Analyzing data using aggregate functions with GROUP BY commands
 - [] Running advanced queries with string operations and comparison operations
 - [] Use logical operators to add logic flow to your SQL queries
 - [] common SQL JOIN commands
