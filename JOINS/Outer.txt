@@ -1,0 +1,17 @@
+SELECT * FROM TableB
+FULL OUTER JOIN TableA
+ON TableA.col_match = TableB.col_match
+
+The FULL OUTER JOIN statement in SQL combines rows from two or more tables,
+including rows that do not have matching values in the other tables.
+It is similar to a LEFT OUTER JOIN or a RIGHT OUTER JOIN, but it includes all rows from both tables,
+regardless of whether they have matching values in the other table.
+
+This example is the Opposite of a INNER JOIN :
+
+SELECT * FROM TableB
+FULL OUTER JOIN TableA
+ON TableA.col_match = TableB.col_match
+WHERE TableA.id IS null OR TableB.id IS null
+
+it only grab rows which are unique to TableA and TableB

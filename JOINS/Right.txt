@@ -1,0 +1,14 @@
+SELECT * FROM TableA
+RIGHT JOIN TableB
+ON TableA.col_match = TableB.col_match
+
+
+The RIGHT JOIN statement in SQL is used to combine rows from two tables based on a specified join condition.
+It returns all rows from the right table, and any matching rows from the left table.
+
+This SQL statement only select row that are present on TableA but not on TableB
+
+SELECT * FROM TableA
+RIGHT JOIN TableB
+ON TableA.col_match = TableB.col_match
+WHERE TableB.is IS null

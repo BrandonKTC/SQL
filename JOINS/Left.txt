@@ -1,0 +1,14 @@
+SELECT * FROM TableA
+LEFT JOIN TableB
+ON TableA.col_match = TableB.col_match
+
+The LEFT JOIN statement in SQL is used to combine data from two or more tables.
+It is similar to the INNER JOIN statement, but it includes all of the rows from the left table,
+even if there are no corresponding rows in the right table.
+
+This SQL statement only select row that are present on TableA but not on TableB
+
+SELECT * FROM TableA
+LEFT JOIN TableB
+ON TableA.col_match = TableB.col_match
+WHERE TableB.id IS null

@@ -1,0 +1,6 @@
+SELECT * FROM TableA
+INNER JOIN TableB
+ON TableA.col_match = TableB.col_match
+
+The INNER JOIN statement in SQL is used to combine rows from two or more tables based on a specified relationship between them.
+The INNER JOIN clause ensures that only rows that have matching values in the specified columns are returned.
