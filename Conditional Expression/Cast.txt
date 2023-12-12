@@ -1,0 +1,9 @@
+
+The CAST statement in SQL is used to convert data from one data type to another.
+It's a fundamental tool for manipulating and normalizing data within SQL queries.
+
+Syntax CAST function
+SELECT CAST('5' AS INTEGER)
+
+PostgresSQL CAST operator
+SELECT '5'::INTEGER

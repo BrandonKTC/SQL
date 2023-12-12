@@ -1,0 +1,8 @@
+
+The UPDATE statement in SQL is used to modify existing data in a table.
+It's a fundamental operation for managing and updating data in relational databases.
+
+UPDATE customers
+SET first_name = 'John',
+    last_name = 'Doe'
+WHERE customer_id = 1;

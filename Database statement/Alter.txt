@@ -1,0 +1,10 @@
+
+In SQL, the ALTER TABLE statement is used to modify the structure of an existing table.
+It can be used to add, delete, or modify columns, add or drop constraints, and change the data type of columns.
+
+ALTER TABLE customers                                ALTER TABLE new_info
+MODIFY COLUMN phone_number INT;                      RENAME COLUMN person TO people;
+
+
+ALTER TABLE table_name                               ALTER TABLE customers
+DROP COLUMN column_name;                             ADD COLUMN email VARCHAR(255);

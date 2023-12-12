@@ -1,0 +1,13 @@
+The CREATE statement in SQL is used to create various database objects, including tables, indexes, views,
+ and stored procedures. Each type of object has its own specific syntax for defining the object's structure and attributes.
+
+Creating Tables:
+
+To create a table, you use the CREATE TABLE statement, specifying the table name, column definitions,
+and any optional constraints or options.
+
+CREATE TABLE table_name (
+  column1 data_type1 [constraints],
+  column2 data_type2 [constraints],
+  ...
+);

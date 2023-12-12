@@ -1,0 +1,9 @@
+A CHECK constraint in SQL is a type of integrity constraint that enforces data validation rules on a table.
+It ensures that the values inserted or updated in a table adhere to specific conditions,
+preventing invalid data from being entered and maintaining data integrity.
+
+CONSTRAINT constraint_name CHECK (expression);
+
+ALTER TABLE orders                                                           CREATE TABLE hire(
+ADD CONSTRAINT order_status_check                                            birthday DATE CHECK (birthday > '1900-01') 
+CHECK (order_status IN ('pending', 'processing', 'shipped', 'delivered'));   hire_date DATE CHECK (hire_date > birthday));

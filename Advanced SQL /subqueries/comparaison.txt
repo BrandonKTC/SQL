@@ -1,0 +1,11 @@
+Subqueries are a way to embed one SQL query inside another SQL query.
+This can be used to filter data or perform calculations based on the results of another query.
+
+
+Subqueries can be used with all of the comparison operators. For example,
+the following query selects all products that are more expensive than the average price of all products
+
+SELECT *
+FROM products
+WHERE price > (SELECT AVG(price) FROM products);
+

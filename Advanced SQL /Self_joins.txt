@@ -1,0 +1,9 @@
+SELECT tableA.col, tableB.col
+FROM table AS tableA
+JOIN table AS tableB ON
+tableA.some_col = tableB.other_col
+
+
+A self-join in SQL is a type of join operation where a table is joined with itself.
+This can be useful for retrieving data that is related to itself.
+The syntax of a self-join is similar to the syntax of a regular join, but the tables involved are the same. 

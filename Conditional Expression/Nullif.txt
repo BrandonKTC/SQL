@@ -1,0 +1,10 @@
+
+The NULLIF function in SQL is used to compare two expressions and return NULL if they are equal, otherwise,
+it returns the first expression. It's particularly useful for handling NULL values and ensuring consistent data manipulation.
+
+SELECT order_id, order_status,
+CASE 
+WHEN NULLIF(order_status, 'pending') IS NULL THEN 'Order status not set' # check if order_status = 'pending' elif = null then = 'Order status not set
+ELSE 'Order status is pending'                                           # else 
+END AS order_status_validation
+FROM orders;

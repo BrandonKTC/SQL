@@ -1,0 +1,7 @@
+The EXTRACT statement in SQL is used to extract a specific part of a date or time value.
+It takes a date or time expression as its argument and returns a value of the specified data type.
+
+Here are some examples of how to use the EXTRACT statement:
+
+SELECT EXTRACT(YEAR FROM order_date) AS order_year
+FROM orders;

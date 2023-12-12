@@ -1,0 +1,15 @@
+The COALESCE function in SQL is used to return the first non-NULL value from a list of expressions.
+It's a versatile tool for handling NULL values and ensuring that your queries return
+meaningful results even when some values may be missing.
+
+Basic Syntax:
+
+The COALESCE function takes a list of expressions as its arguments and returns the first non-NULL value.
+If all values are NULL, it returns the NULL value.
+
+e.g :
+
+SELECT employee_id, first_name, last_name,
+COALESCE(email, 'No email provided'),
+COALESCE(phone_number, 'No phone number provided')
+FROM employees;

@@ -1,0 +1,10 @@
+Inline subqueries are enclosed in parentheses and appear within the WHERE clause or the SELECT clause of the main query. For example,
+the following query selects all employees who have a manager who has a salary greater than $100,000
+
+SELECT *
+FROM employees
+WHERE manager_id IN (
+SELECT employee_id
+FROM employees
+WHERE salary > 100000
+);

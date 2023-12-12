@@ -1,0 +1,15 @@
+Subqueries and the EXISTS operator are both powerful tools for querying data in SQL.
+The EXISTS operator returns TRUE if the subquery returns any rows, and FALSE otherwise.
+
+The EXISTS operator can be used in a variety of ways, including:
+
+Checking for existence: You can use the EXISTS operator to check whether a particular condition exists in a table.
+For example, you could use the EXISTS operator to check whether a customer has any orders.
+
+SELECT *
+FROM customers
+WHERE EXISTS (
+    SELECT 1
+    FROM orders
+    WHERE customer_id = customers.id
+);

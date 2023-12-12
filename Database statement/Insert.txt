@@ -1,0 +1,8 @@
+The INSERT statement in SQL is used to insert new records into a table.
+The basic syntax for the INSERT statement is as follows:
+
+INSERT INTO customers (customer_id, first_name, last_name, email, phone_number)
+VALUES
+(1, 'John', 'Doe', 'johndoe@example.com', '123-456-7890'),
+(2, 'Jane', 'Smith', 'janesmith@example.com', '987-654-3210'),
+(3, 'Peter', 'Jones', 'peterjones@example.com', '098-765-4321');

@@ -1,7 +1,7 @@
 Most Common Aggregate Functions:
 
 • AVG() - returns average value :
-SELECT AVG(col_name) FROM table_name
+SELECT ROUND(AVG(col_name),2) FROM table_name
 
 • COUNT() - returns number of values :
 SELECT COUNT(col_name) FROM table_name

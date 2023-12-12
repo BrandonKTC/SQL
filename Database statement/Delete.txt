@@ -1,0 +1,22 @@
+The DELETE statement in SQL is used to remove rows from a table.
+It is a fundamental operation for maintaining data integrity and removing outdated or irrelevant information.
+
+DELETE FROM orders
+WHERE customer_id IN (SELECT customer_id FROM customers WHERE city = 'Boston');
+RETURNING customer_id, city
+
+
+The DROP statement is used to delete or remove objects from the database.
+the DROP statement can be used to delete various database objects.
+
+- Tables: DROP TABLE table_name;
+
+- Columns: DROP COLUMN column_name FROM table_name;
+
+- Indexes: DROP INDEX index_name ON table_name;
+
+- Views: DROP VIEW view_name;
+
+- Schemas: DROP SCHEMA schema_name;
+
+- Databases: DROP DATABASE database_name;

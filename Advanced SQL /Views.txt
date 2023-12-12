@@ -1,0 +1,18 @@
+A view in SQL is a virtual table that is not stored physically in the database but is instead defined by a SQL statement.
+It acts as a window into the data from one or more tables, allowing you to retrieve, manipulate,
+and analyze data in a more convenient and efficient manner.
+
+Creating a View:
+
+To create a view, you use the CREATE VIEW statement, specifying the view name,
+the SELECT statement that defines the view's contents, and any optional conditions or modifications.
+
+CREATE VIEW customer_info AS 
+SELECT first_name, last_name, address FROM customer
+INNER JOIN address 
+ON customer.address_id = address.address_id
+
+
+Then you can grab the created view by using it's view name :
+
+SELECT * FROM customer_info
